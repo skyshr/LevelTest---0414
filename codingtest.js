@@ -46,9 +46,9 @@ function primeCount(array) {
         }
         return true
     }
-    var iterator = comb(array,3);
+    let iterator = comb(array,3);
     let result = [];
-    for (var item of iterator){
+    for (let item of iterator){
         let sum = item[0] + item[1] + item[2];
         if (isPrime(sum)) {
             if (!result.includes(sum)) result.push(sum)
