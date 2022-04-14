@@ -3,8 +3,8 @@ var comb = require("combinations-generator");
 // 1. 피보나치
 function fibo(n) {
     let fiboArr = [0,1];
-    if (n==1) return 0;
-    if (n==2) return 1;
+    if (n===1) return 0;
+    if (n===2) return 1;
     for (let i = 0; i < n-2; i++) {
         let tmp = fiboArr[0] + fiboArr[1];
         fiboArr[0] = fiboArr[1];
@@ -39,10 +39,10 @@ function sum(absolutes, signs) {
 //3. 소수의 갯수
 function primeCount(array) {
     function isPrime(n) {
-        if (n==2 || n==3) return true
-        if (n%2==0) return false
+        if (n===2 || n===3) return true
+        if (n%2===0) return false
         for (let i = 3; i < parseInt(n/2) + 1; i+=2) {
-            if (n%i==0) return false
+            if (n%i===0) return false
         }
         return true
     }

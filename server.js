@@ -9,7 +9,6 @@ app.use(cors());
 app.get('/', (req, res) => {
     var cookies = {}
     axios.get('http://localhost:3000/getCookie').then((res) => {
-        // console.log(res.data);
         console.log(req.headers.cookie);
         cookies = cookie.parse(req.headers.cookie);
         console.log(cookies.yummy_cookie);
