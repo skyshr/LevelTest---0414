@@ -58,5 +58,5 @@ function primeCount(array) {
 }
 
 console.log(primeCount([1,2,3,4]));
-console.log(primeCount([1,2,7,6,4]));
+console.log(primeCount([1,2,7,6,4,11]));
 console.log(primeCount([1,2,3,4,5]));
